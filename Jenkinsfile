@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
+                git branch: 'main', url: 'https://github.com/pratikshakarkule275/batch25.git'
                 echo "Git Pull Successful"
             }
         }
